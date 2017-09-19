@@ -1,0 +1,61 @@
+Nov  9 03:15:01 jenkins rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="988" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Nov  9 04:50:06 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 04:50:06 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 04:50:08 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 5430 seconds.
+Nov  9 06:20:38 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 06:20:38 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 06:20:40 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 5532 seconds.
+Nov  9 07:52:52 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 07:52:52 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 07:52:54 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 6351 seconds.
+Nov  9 09:38:45 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 09:38:45 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 09:38:47 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 6195 seconds.
+Nov  9 11:22:02 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 11:22:02 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 11:22:04 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 7108 seconds.
+Nov  9 13:20:32 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 13:20:32 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 13:20:34 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 5582 seconds.
+Nov  9 14:53:36 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 14:53:36 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 14:53:38 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 6452 seconds.
+Nov  9 16:41:10 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 16:41:10 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 16:41:12 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 5472 seconds.
+Nov  9 18:12:24 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 18:12:24 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 18:12:26 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 7029 seconds.
+Nov  9 20:09:35 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 20:09:35 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 20:09:37 jenkins dhclient[921]: bound to 192.168.0.111 -- renewal in 6265 seconds.
+Nov  9 21:54:02 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 21:54:02 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 21:54:04 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 6514 seconds.
+Nov  9 23:42:38 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov  9 23:42:38 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov  9 23:42:40 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 6504 seconds.
+Nov 10 01:31:04 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov 10 01:31:04 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov 10 01:31:06 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 6815 seconds.
+Nov 10 03:24:41 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov 10 03:24:41 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov 10 03:24:43 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 5734 seconds.
+Nov 10 05:00:17 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov 10 05:00:17 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov 10 05:00:19 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 6857 seconds.
+Nov 10 06:54:36 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov 10 06:54:36 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov 10 06:54:38 jenkins dhclient[921]: bound to 192.168.0.12 -- renewal in 6527 seconds.
+Nov 10 08:43:25 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov 10 08:43:25 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov 10 08:43:27 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 6094 seconds.
+Nov 10 10:25:01 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov 10 10:25:01 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov 10 10:25:03 jenkins dhclient[921]: bound to 192.168.0.111 -- renewal in 6101 seconds.
+Nov 10 12:06:44 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov 10 12:06:44 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov 10 12:06:45 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 6696 seconds.
+Nov 10 13:58:21 jenkins dhclient[921]: DHCPREQUEST on eth0 to 192.168.0.100 port 67 (xid=0x2edb1fe2)
+Nov 10 13:58:21 jenkins dhclient[921]: DHCPACK from 192.168.0.100 (xid=0x2edb1fe2)
+Nov 10 13:58:22 jenkins dhclient[921]: bound to 192.168.0.11 -- renewal in 7169 seconds.

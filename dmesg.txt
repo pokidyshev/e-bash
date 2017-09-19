@@ -1,0 +1,426 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.9.35-v7+ (dc4@dc4-XPS13-9333) (gcc version 4.9.3 (crosstool-NG crosstool-ng-1.22.0-88-g8460611) ) #1014 SMP Fri Jun 30 14:47:43 BST 2017
+[    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c5383d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt:Machine model: Raspberry Pi 3 Model B Rev 1.2
+[    0.000000] cma: Reserved 8 MiB at 0x3a800000
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 241664
+[    0.000000] free_area_init_node: node 0, pgdat 80c6ee40, node_mem_map b9faa000
+[    0.000000]   Normal zone: 2124 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 241664 pages, LIFO batch:31
+[    0.000000] percpu: Embedded 14 pages/cpu @b9f64000 s25600 r8192 d23552 u57344
+[    0.000000] pcpu-alloc: s25600 r8192 d23552 u57344 alloc=14*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 239540
+[    0.000000] Kernel command line: 8250.nr_uarts=0 bcm2708_fb.fbwidth=656 bcm2708_fb.fbheight=416 bcm2708_fb.fbswap=1 vc_mem.mem_base=0x3dc00000 vc_mem.mem_size=0x3f000000  dwc_otg.lpm_enable=0 console=ttyS0,115200 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 936296K/966656K available (7168K kernel code, 484K rwdata, 2012K rodata, 1024K init, 778K bss, 22168K reserved, 8192K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+    vmalloc : 0xbb800000 - 0xff800000   (1088 MB)
+    lowmem  : 0x80000000 - 0xbb000000   ( 944 MB)
+    modules : 0x7f000000 - 0x80000000   (  16 MB)
+      .text : 0x80008000 - 0x80800000   (8160 kB)
+      .init : 0x80b00000 - 0x80c00000   (1024 kB)
+      .data : 0x80c00000 - 0x80c79014   ( 485 kB)
+       .bss : 0x80c7b000 - 0x80d3da64   ( 779 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 32.
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] arm_arch_timer: Architected cp15 timer(s) running at 19.20MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000009] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000026] Switching to timer-based delay loop, resolution 52ns
+[    0.000337] Console: colour dummy device 80x30
+[    0.001231] console [tty1] enabled
+[    0.001281] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+[    0.001352] pid_max: default: 32768 minimum: 301
+[    0.001707] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.001749] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.002778] Disabling cpuset control group subsystem
+[    0.002969] CPU: Testing write buffer coherency: ok
+[    0.003039] ftrace: allocating 22390 entries in 66 pages
+[    0.054838] CPU0: update cpu_capacity 1024
+[    0.054907] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.055005] Setting up static identity map for 0x100000 - 0x100034
+[    0.057242] CPU1: update cpu_capacity 1024
+[    0.057249] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.057965] CPU2: update cpu_capacity 1024
+[    0.057971] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[    0.058638] CPU3: update cpu_capacity 1024
+[    0.058645] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+[    0.058728] Brought up 4 CPUs
+[    0.058900] SMP: Total of 4 processors activated (153.60 BogoMIPS).
+[    0.058930] CPU: All CPU(s) started in HYP mode.
+[    0.058956] CPU: Virtualization extensions available.
+[    0.059782] devtmpfs: initialized
+[    0.070848] VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+[    0.071169] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.071231] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.071795] pinctrl core: initialized pinctrl subsystem
+[    0.072714] NET: Registered protocol family 16
+[    0.075000] DMA: preallocated 1024 KiB pool for atomic coherent allocations
+[    0.083862] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.083910] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.084086] Serial: AMBA PL011 UART driver
+[    0.085983] bcm2835-mbox 3f00b880.mailbox: mailbox enabled
+[    0.086531] uart-pl011 3f201000.serial: could not find pctldev for node /soc/gpio@7e200000/uart0_pins, deferring probe
+[    0.155436] bcm2835-dma 3f007000.dma: DMA legacy API manager at bb80f000, dmachans=0x1
+[    0.157297] SCSI subsystem initialized
+[    0.157480] usbcore: registered new interface driver usbfs
+[    0.157582] usbcore: registered new interface driver hub
+[    0.157697] usbcore: registered new device driver usb
+[    0.164390] raspberrypi-firmware soc:firmware: Attached to firmware from 2017-07-03 14:16
+[    0.165819] clocksource: Switched to clocksource arch_sys_counter
+[    0.212680] VFS: Disk quotas dquot_6.6.0
+[    0.212791] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.213014] FS-Cache: Loaded
+[    0.213285] CacheFiles: Loaded
+[    0.225532] NET: Registered protocol family 2
+[    0.226474] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.226612] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.226823] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.226936] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.227004] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.227240] NET: Registered protocol family 1
+[    0.227671] RPC: Registered named UNIX socket transport module.
+[    0.227704] RPC: Registered udp transport module.
+[    0.227732] RPC: Registered tcp transport module.
+[    0.227759] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.228727] hw perfevents: enabled with armv7_cortex_a7 PMU driver, 7 counters available
+[    0.231030] workingset: timestamp_bits=14 max_order=18 bucket_order=4
+[    0.247153] FS-Cache: Netfs 'nfs' registered for caching
+[    0.248156] NFS: Registering the id_resolver key type
+[    0.248206] Key type id_resolver registered
+[    0.248235] Key type id_legacy registered
+[    0.250692] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    0.250839] io scheduler noop registered
+[    0.250870] io scheduler deadline registered (default)
+[    0.251198] io scheduler cfq registered
+[    0.256867] BCM2708FB: allocated DMA memory fa910000
+[    0.256922] BCM2708FB: allocated DMA channel 0 @ bb80f000
+[    0.265617] Console: switching to colour frame buffer device 82x26
+[    0.274081] bcm2835-rng 3f104000.rng: hwrng registered
+[    0.276493] vc-cma: Videocore CMA driver
+[    0.278713] vc-cma: vc_cma_base      = 0x00000000
+[    0.280935] vc-cma: vc_cma_size      = 0x00000000 (0 MiB)
+[    0.283198] vc-cma: vc_cma_initial   = 0x00000000 (0 MiB)
+[    0.285610] vc-mem: phys_addr:0x00000000 mem_base=0x3dc00000 mem_size:0x3f000000(1008 MiB)
+[    0.305207] brd: module loaded
+[    0.316184] loop: module loaded
+[    0.318231] Loading iSCSI transport class v2.0-870.
+[    0.320800] usbcore: registered new interface driver smsc95xx
+[    0.322899] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+[    0.553087] Core Release: 2.80a
+[    0.555157] Setting default values for core params
+[    0.557232] Finished setting default values for core params
+[    0.759678] Using Buffer DMA mode
+[    0.761733] Periodic Transfer Interrupt Enhancement - disabled
+[    0.763891] Multiprocessor Interrupt Enhancement - disabled
+[    0.766079] OTG VER PARAM: 0, OTG VER FLAG: 0
+[    0.768285] Dedicated Tx FIFOs mode
+[    0.770744] WARN::dwc_otg_hcd_init:1032: FIQ DMA bounce buffers: virt = 0xba904000 dma = 0xfa904000 len=9024
+[    0.775197] FIQ FSM acceleration enabled for :
+Non-periodic Split Transactions
+Periodic Split Transactions
+High-Speed Isochronous Endpoints
+Interrupt/Control Split Transaction hack enabled
+[    0.786585] dwc_otg: Microframe scheduler enabled
+[    0.786635] WARN::hcd_init_fiq:459: FIQ on core 1 at 0x8058ef90
+[    0.788947] WARN::hcd_init_fiq:460: FIQ ASM at 0x8058f300 length 36
+[    0.791274] WARN::hcd_init_fiq:486: MPHI regs_base at 0xbb87a000
+[    0.793633] dwc_otg 3f980000.usb: DWC OTG Controller
+[    0.795976] dwc_otg 3f980000.usb: new USB bus registered, assigned bus number 1
+[    0.798344] dwc_otg 3f980000.usb: irq 62, io mem 0x00000000
+[    0.800668] Init: Port Power? op_state=1
+[    0.802930] Init: Power Port (0)
+[    0.805315] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.807653] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.809961] usb usb1: Product: DWC OTG Controller
+[    0.812212] usb usb1: Manufacturer: Linux 4.9.35-v7+ dwc_otg_hcd
+[    0.814489] usb usb1: SerialNumber: 3f980000.usb
+[    0.817597] hub 1-0:1.0: USB hub found
+[    0.819804] hub 1-0:1.0: 1 port detected
+[    0.822535] dwc_otg: FIQ enabled
+[    0.822539] dwc_otg: NAK holdoff enabled
+[    0.822543] dwc_otg: FIQ split-transaction FSM enabled
+[    0.822557] Module dwc_common_port init
+[    0.822794] usbcore: registered new interface driver usb-storage
+[    0.825145] mousedev: PS/2 mouse device common for all mice
+[    0.828329] bcm2835-wdt 3f100000.watchdog: Broadcom BCM2835 watchdog timer
+[    0.830867] bcm2835-cpufreq: min=600000 max=1200000
+[    0.833522] sdhci: Secure Digital Host Controller Interface driver
+[    0.835864] sdhci: Copyright(c) Pierre Ossman
+[    0.838392] sdhost-bcm2835 3f202000.sdhost: could not get clk, deferring probe
+[    0.842964] mmc-bcm2835 3f300000.mmc: could not get clk, deferring probe
+[    0.845512] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.850596] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.853250] hidraw: raw HID events driver (C) Jiri Kosina
+[    0.855948] usbcore: registered new interface driver usbhid
+[    0.858412] usbhid: USB HID core driver
+[    0.861659] vchiq: vchiq_init_state: slot_zero = 0xba980000, is_master = 0
+[    0.865906] Initializing XFRM netlink socket
+[    0.868451] NET: Registered protocol family 17
+[    0.871040] Key type dns_resolver registered
+[    0.873889] Registering SWP/SWPB emulation handler
+[    0.877088] registered taskstats version 1
+[    0.879881] vc-sm: Videocore shared memory driver
+[    0.882390] [vc_sm_connected_init]: start
+[    0.885291] [vc_sm_connected_init]: end - returning 0
+[    0.893740] 3f201000.serial: ttyAMA0 at MMIO 0x3f201000 (irq = 87, base_baud = 0) is a PL011 rev2
+[    0.900190] sdhost: log_buf @ ba907000 (fa907000)
+[    0.975849] mmc0: sdhost-bcm2835 loaded - DMA enabled (>1)
+[    0.980512] mmc-bcm2835 3f300000.mmc: mmc_debug:0 mmc_debug2:0
+[    0.982957] mmc-bcm2835 3f300000.mmc: DMA channel allocated
+[    1.035910] Indeed it is in host mode hprt0 = 00021501
+[    1.098334] of_cfs_init
+[    1.100644] of_cfs_init: OK
+[    1.103282] Waiting for root device /dev/mmcblk0p2...
+[    1.116205] mmc0: host does not support reading read-only switch, assuming write-enable
+[    1.122698] mmc0: new high speed SDHC card at address 0002
+[    1.125658] mmcblk0: mmc0:0002 00000 7.42 GiB
+[    1.126134] random: fast init done
+[    1.131902]  mmcblk0: p1 p2
+[    1.138776] mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+[    1.142595] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.146342] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.151253] mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+[    1.219298] EXT4-fs (mmcblk0p2): INFO: recovery required on readonly filesystem
+[    1.221449] EXT4-fs (mmcblk0p2): write access will be enabled during recovery
+[    1.235854] usb 1-1: new high-speed USB device number 2 using dwc_otg
+[    1.238102] Indeed it is in host mode hprt0 = 00001101
+[    1.313672] mmc1: new high speed SDIO card at address 0001
+[    1.466116] usb 1-1: New USB device found, idVendor=0424, idProduct=9514
+[    1.468341] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    1.471301] hub 1-1:1.0: USB hub found
+[    1.473543] hub 1-1:1.0: 5 ports detected
+[    1.795857] usb 1-1.1: new high-speed USB device number 3 using dwc_otg
+[    1.926102] usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+[    1.928343] usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    1.933347] smsc95xx v1.0.5
+[    2.029536] smsc95xx 1-1.1:1.0 eth0: register 'smsc95xx' at usb-3f980000.usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:64:f3:32
+[    3.752445] EXT4-fs (mmcblk0p2): orphan cleanup on readonly fs
+[    3.835647] EXT4-fs (mmcblk0p2): 13 orphan inodes deleted
+[    3.838013] EXT4-fs (mmcblk0p2): recovery complete
+[    4.573295] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    4.578371] VFS: Mounted root (ext4 filesystem) readonly on device 179:2.
+[    4.589550] devtmpfs: mounted
+[    4.593905] Freeing unused kernel memory: 1024K (80b00000 - 80c00000)
+[    4.956187] systemd[1]: systemd 215 running in system mode. (+PAM +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ -SECCOMP -APPARMOR)
+[    4.962027] systemd[1]: Detected architecture 'arm'.
+[    5.092383] NET: Registered protocol family 10
+[    5.096736] systemd[1]: Inserted module 'ipv6'
+[    5.101688] systemd[1]: Set hostname to <raspberrypi>.
+[    5.694297] systemd[1]: Cannot add dependency job for unit display-manager.service, ignoring: Unit display-manager.service failed to load: No such file or directory.
+[    5.705527] systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+[    5.711288] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    5.717178] systemd[1]: Starting Remote File Systems (Pre).
+[    5.723447] systemd[1]: Reached target Remote File Systems (Pre).
+[    5.726471] systemd[1]: Starting Encrypted Volumes.
+[    6.302123] systemd-udevd[148]: starting version 215
+[    6.682425] gpiomem-bcm2835 3f200000.gpiomem: Initialised: Registers at 0x3f200000
+[    7.018014] usbcore: registered new interface driver brcmfmac
+[    7.039363] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+[    7.214518] brcmfmac: Firmware version = wl0: May 27 2016 00:13:38 version 7.45.41.26 (r640327) FWID 01-df77e4a7
+[    7.522388] systemd-journald[149]: Received request to flush runtime journal from PID 1
+[    7.561645] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    7.591655] nf_conntrack version 0.5.0 (15360 buckets, 61440 max)
+[    7.627840] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    8.145059] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[    8.145084] brcmfmac: power management disabled
+[    8.589008] uart-pl011 3f201000.serial: no DMA platform data
+[    8.643364] tun: Universal TUN/TAP device driver, 1.6
+[    8.643371] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    8.966810] Adding 102396k swap on /var/swap.  Priority:-1 extents:3 across:208892k SSFS
+[    9.177028] smsc95xx 1-1.1:1.0 eth0: hardware isn't capable of remote wakeup
+[    9.177199] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   13.005552] Bluetooth: Core ver 2.22
+[   13.005628] NET: Registered protocol family 31
+[   13.005634] Bluetooth: HCI device and connection manager initialized
+[   13.005653] Bluetooth: HCI socket layer initialized
+[   13.005667] Bluetooth: L2CAP socket layer initialized
+[   13.005699] Bluetooth: SCO socket layer initialized
+[   13.041207] Bluetooth: HCI UART driver ver 2.3
+[   13.041219] Bluetooth: HCI UART protocol H4 registered
+[   13.041224] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[   13.041401] Bluetooth: HCI UART protocol Broadcom registered
+[   13.218704] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   13.218714] Bluetooth: BNEP filters: protocol multicast
+[   13.218733] Bluetooth: BNEP socket layer initialized
+[   20.796017] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   69.762538] random: crng init done
+[197148.533662] nf_conntrack: default automatic helper assignment has been turned off for security reasons and CT-based  firewall rule not found. Use the iptables CT target to attach helpers instead.
+[787865.232951] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:10:fe:ed:69:ee:44:08:00 SRC=176.59.54.87 DST=192.168.0.6 LEN=52 TOS=0x08 PREC=0x20 TTL=54 ID=38245 DF PROTO=TCP SPT=59530 DPT=443 WINDOW=52 RES=0x00 ACK URGP=0 
+[787866.617804] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:10:fe:ed:69:ee:44:08:00 SRC=176.59.54.87 DST=192.168.0.6 LEN=569 TOS=0x08 PREC=0x20 TTL=53 ID=38246 DF PROTO=TCP SPT=59530 DPT=443 WINDOW=52 RES=0x00 ACK PSH URGP=0 
+[3571171.039843] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=51351 DF PROTO=TCP SPT=8080 DPT=36972 WINDOW=0 RES=0x00 RST URGP=0 
+[3571407.066564] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39860 DF PROTO=TCP SPT=8080 DPT=36986 WINDOW=0 RES=0x00 RST URGP=0 
+[3571407.067842] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39861 DF PROTO=TCP SPT=8080 DPT=36988 WINDOW=0 RES=0x00 RST URGP=0 
+[3571407.068335] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39862 DF PROTO=TCP SPT=8080 DPT=36980 WINDOW=0 RES=0x00 RST URGP=0 
+[3571407.086473] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39864 DF PROTO=TCP SPT=8080 DPT=36990 WINDOW=0 RES=0x00 RST URGP=0 
+[3571407.279864] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39921 DF PROTO=TCP SPT=8080 DPT=36984 WINDOW=0 RES=0x00 RST URGP=0 
+[3571407.280297] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39922 DF PROTO=TCP SPT=8080 DPT=36982 WINDOW=0 RES=0x00 RST URGP=0 
+[3571407.280554] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39923 DF PROTO=TCP SPT=8080 DPT=36968 WINDOW=0 RES=0x00 RST URGP=0 
+[3571407.286743] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39924 DF PROTO=TCP SPT=8080 DPT=36988 WINDOW=0 RES=0x00 RST URGP=0 
+[3571407.287199] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39925 DF PROTO=TCP SPT=8080 DPT=36986 WINDOW=0 RES=0x00 RST URGP=0 
+[3571407.306489] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39929 DF PROTO=TCP SPT=8080 DPT=36990 WINDOW=0 RES=0x00 RST URGP=0 
+[3571434.718877] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=42784 DF PROTO=TCP SPT=8080 DPT=36982 WINDOW=0 RES=0x00 RST URGP=0 
+[3571462.241716] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=49588 DF PROTO=TCP SPT=8080 DPT=36988 WINDOW=0 RES=0x00 RST URGP=0 
+[3571541.101860] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=58254 DF PROTO=TCP SPT=8080 DPT=36994 WINDOW=0 RES=0x00 RST URGP=0 
+[3571541.999650] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=58406 DF PROTO=TCP SPT=8080 DPT=36994 WINDOW=0 RES=0x00 RST URGP=0 
+[3571543.765443] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=58566 DF PROTO=TCP SPT=8080 DPT=36994 WINDOW=0 RES=0x00 RST URGP=0 
+[3571554.399696] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=59737 DF PROTO=TCP SPT=8080 DPT=36994 WINDOW=0 RES=0x00 RST URGP=0 
+[3571658.657973] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=10544 DF PROTO=TCP SPT=8080 DPT=37006 WINDOW=0 RES=0x00 RST URGP=0 
+[3571659.600310] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=10583 DF PROTO=TCP SPT=8080 DPT=37006 WINDOW=0 RES=0x00 RST URGP=0 
+[3571661.439545] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=11091 DF PROTO=TCP SPT=8080 DPT=37006 WINDOW=0 RES=0x00 RST URGP=0 
+[3571665.039587] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=11497 DF PROTO=TCP SPT=8080 DPT=37006 WINDOW=0 RES=0x00 RST URGP=0 
+[3571717.741256] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=20595 DF PROTO=TCP SPT=8080 DPT=37022 WINDOW=0 RES=0x00 RST URGP=0 
+[3571717.959414] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=20604 DF PROTO=TCP SPT=8080 DPT=37022 WINDOW=0 RES=0x00 RST URGP=0 
+[3571718.187512] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=20652 DF PROTO=TCP SPT=8080 DPT=37022 WINDOW=0 RES=0x00 RST URGP=0 
+[3571718.613436] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=20726 DF PROTO=TCP SPT=8080 DPT=37022 WINDOW=0 RES=0x00 RST URGP=0 
+[3571719.519447] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=20991 DF PROTO=TCP SPT=8080 DPT=37022 WINDOW=0 RES=0x00 RST URGP=0 
+[3571745.761051] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=25126 DF PROTO=TCP SPT=8080 DPT=37022 WINDOW=0 RES=0x00 RST URGP=0 
+[3571748.029412] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=25185 DF PROTO=TCP SPT=8080 DPT=37036 WINDOW=0 RES=0x00 RST URGP=0 
+[3571775.839566] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=27958 DF PROTO=TCP SPT=8080 DPT=37036 WINDOW=0 RES=0x00 RST URGP=0 
+[3571803.360418] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=32673 DF PROTO=TCP SPT=8080 DPT=37036 WINDOW=0 RES=0x00 RST URGP=0 
+[3571807.981322] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=33607 DF PROTO=TCP SPT=8080 DPT=37038 WINDOW=0 RES=0x00 RST URGP=0 
+[3571832.240072] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=37762 DF PROTO=TCP SPT=8080 DPT=37034 WINDOW=0 RES=0x00 RST URGP=0 
+[3571854.566974] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=41203 DF PROTO=TCP SPT=8080 DPT=37034 WINDOW=0 RES=0x00 RST URGP=0 
+[3571897.897000] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=49626 DF PROTO=TCP SPT=8080 DPT=37042 WINDOW=0 RES=0x00 RST URGP=0 
+[3571898.124521] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=49669 DF PROTO=TCP SPT=8080 DPT=37042 WINDOW=0 RES=0x00 RST URGP=0 
+[3571926.241531] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=52611 DF PROTO=TCP SPT=8080 DPT=37042 WINDOW=0 RES=0x00 RST URGP=0 
+[3571928.102755] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=52823 DF PROTO=TCP SPT=8080 DPT=37030 WINDOW=0 RES=0x00 RST URGP=0 
+[3571953.120936] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=55157 DF PROTO=TCP SPT=8080 DPT=37044 WINDOW=0 RES=0x00 RST URGP=0 
+[3571967.201193] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=57100 DF PROTO=TCP SPT=8080 DPT=37040 WINDOW=0 RES=0x00 RST URGP=0 
+[3571994.730900] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=64016 DF PROTO=TCP SPT=8080 DPT=37054 WINDOW=0 RES=0x00 RST URGP=0 
+[3572101.439368] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=18230 DF PROTO=TCP SPT=8080 DPT=37098 WINDOW=0 RES=0x00 RST URGP=0 
+[3572104.879810] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=18418 DF PROTO=TCP SPT=8080 DPT=37098 WINDOW=0 RES=0x00 RST URGP=0 
+[3572125.928955] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=19688 DF PROTO=TCP SPT=8080 DPT=37098 WINDOW=0 RES=0x00 RST URGP=0 
+[3572128.189595] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=19765 DF PROTO=TCP SPT=8080 DPT=37076 WINDOW=0 RES=0x00 RST URGP=0 
+[3572128.409282] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=19779 DF PROTO=TCP SPT=8080 DPT=37076 WINDOW=0 RES=0x00 RST URGP=0 
+[3572128.839661] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=19831 DF PROTO=TCP SPT=8080 DPT=37076 WINDOW=0 RES=0x00 RST URGP=0 
+[3572129.756341] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=19914 DF PROTO=TCP SPT=8080 DPT=37076 WINDOW=0 RES=0x00 RST URGP=0 
+[3572147.287011] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=22870 DF PROTO=TCP SPT=8080 DPT=37094 WINDOW=0 RES=0x00 RST URGP=0 
+[3572170.960768] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=26169 DF PROTO=TCP SPT=8080 DPT=37092 WINDOW=0 RES=0x00 RST URGP=0 
+[3572193.124932] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=30329 DF PROTO=TCP SPT=8080 DPT=37092 WINDOW=0 RES=0x00 RST URGP=0 
+[3572224.115791] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=36007 DF PROTO=TCP SPT=8080 DPT=37128 WINDOW=0 RES=0x00 RST URGP=0 
+[3572231.039506] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=37181 DF PROTO=TCP SPT=8080 DPT=37128 WINDOW=0 RES=0x00 RST URGP=0 
+[3572270.239073] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=45449 DF PROTO=TCP SPT=8080 DPT=37146 WINDOW=0 RES=0x00 RST URGP=0 
+[3572270.512923] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=45505 DF PROTO=TCP SPT=8080 DPT=37146 WINDOW=0 RES=0x00 RST URGP=0 
+[3572287.760109] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=48012 DF PROTO=TCP SPT=8080 DPT=37156 WINDOW=0 RES=0x00 RST URGP=0 
+[3572309.862936] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=52244 DF PROTO=TCP SPT=8080 DPT=37154 WINDOW=0 RES=0x00 RST URGP=0 
+[3572329.445998] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=55260 DF PROTO=TCP SPT=8080 DPT=37174 WINDOW=0 RES=0x00 RST URGP=0 
+[3572349.043378] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=58528 DF PROTO=TCP SPT=8080 DPT=37176 WINDOW=0 RES=0x00 RST URGP=0 
+[3572370.149529] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=62093 DF PROTO=TCP SPT=8080 DPT=37178 WINDOW=0 RES=0x00 RST URGP=0 
+[3572393.901313] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=65434 DF PROTO=TCP SPT=8080 DPT=37158 WINDOW=0 RES=0x00 RST URGP=0 
+[3572408.156025] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=1417 DF PROTO=TCP SPT=8080 DPT=37158 WINDOW=0 RES=0x00 RST URGP=0 
+[3572429.279136] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=4494 DF PROTO=TCP SPT=8080 DPT=37196 WINDOW=0 RES=0x00 RST URGP=0 
+[3572452.955939] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=7074 DF PROTO=TCP SPT=8080 DPT=37204 WINDOW=0 RES=0x00 RST URGP=0 
+[3572477.279149] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=10490 DF PROTO=TCP SPT=8080 DPT=37206 WINDOW=0 RES=0x00 RST URGP=0 
+[3572518.119117] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=17737 DF PROTO=TCP SPT=8080 DPT=37200 WINDOW=0 RES=0x00 RST URGP=0 
+[3572518.336454] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=17773 DF PROTO=TCP SPT=8080 DPT=37200 WINDOW=0 RES=0x00 RST URGP=0 
+[3572545.768340] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=21734 DF PROTO=TCP SPT=8080 DPT=37200 WINDOW=0 RES=0x00 RST URGP=0 
+[3572549.132178] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=22153 DF PROTO=TCP SPT=8080 DPT=37210 WINDOW=0 RES=0x00 RST URGP=0 
+[3572577.119104] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=25936 DF PROTO=TCP SPT=8080 DPT=37210 WINDOW=0 RES=0x00 RST URGP=0 
+[3572587.189108] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=27453 DF PROTO=TCP SPT=8080 DPT=37192 WINDOW=0 RES=0x00 RST URGP=0 
+[3572611.003459] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=30894 DF PROTO=TCP SPT=8080 DPT=37216 WINDOW=0 RES=0x00 RST URGP=0 
+[3572635.359131] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=34188 DF PROTO=TCP SPT=8080 DPT=37194 WINDOW=0 RES=0x00 RST URGP=0 
+[3572663.299755] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=38675 DF PROTO=TCP SPT=8080 DPT=37220 WINDOW=0 RES=0x00 RST URGP=0 
+[3572667.203084] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39436 DF PROTO=TCP SPT=8080 DPT=37234 WINDOW=0 RES=0x00 RST URGP=0 
+[3572691.679799] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=43615 DF PROTO=TCP SPT=8080 DPT=37248 WINDOW=0 RES=0x00 RST URGP=0 
+[3572709.099452] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=46334 DF PROTO=TCP SPT=8080 DPT=37228 WINDOW=0 RES=0x00 RST URGP=0 
+[3572753.720499] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=53929 DF PROTO=TCP SPT=8080 DPT=37272 WINDOW=0 RES=0x00 RST URGP=0 
+[3572753.939271] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=53942 DF PROTO=TCP SPT=8080 DPT=37272 WINDOW=0 RES=0x00 RST URGP=0 
+[3572767.835851] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=55053 DF PROTO=TCP SPT=8080 DPT=37272 WINDOW=0 RES=0x00 RST URGP=0 
+[3572787.842084] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=58458 DF PROTO=TCP SPT=8080 DPT=37268 WINDOW=0 RES=0x00 RST URGP=0 
+[3572812.649769] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=62657 DF PROTO=TCP SPT=8080 DPT=37268 WINDOW=0 RES=0x00 RST URGP=0 
+[3572828.128816] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=38 DF PROTO=TCP SPT=8080 DPT=37292 WINDOW=0 RES=0x00 RST URGP=0 
+[3572858.916310] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=3610 DF PROTO=TCP SPT=8080 DPT=37294 WINDOW=0 RES=0x00 RST URGP=0 
+[3572869.109100] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=5400 DF PROTO=TCP SPT=8080 DPT=37298 WINDOW=0 RES=0x00 RST URGP=0 
+[3572889.960848] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=8639 DF PROTO=TCP SPT=8080 DPT=37310 WINDOW=0 RES=0x00 RST URGP=0 
+[3572918.238910] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=13020 DF PROTO=TCP SPT=8080 DPT=37310 WINDOW=0 RES=0x00 RST URGP=0 
+[3572936.984578] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=15796 DF PROTO=TCP SPT=8080 DPT=37316 WINDOW=0 RES=0x00 RST URGP=0 
+[3572964.958986] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=20322 DF PROTO=TCP SPT=8080 DPT=37316 WINDOW=0 RES=0x00 RST URGP=0 
+[3572983.128838] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=23706 DF PROTO=TCP SPT=8080 DPT=37302 WINDOW=0 RES=0x00 RST URGP=0 
+[3572992.481490] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=24628 DF PROTO=TCP SPT=8080 DPT=37316 WINDOW=0 RES=0x00 RST URGP=0 
+[3573013.906923] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=26590 DF PROTO=TCP SPT=8080 DPT=37326 WINDOW=0 RES=0x00 RST URGP=0 
+[3573027.309427] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=28119 DF PROTO=TCP SPT=8080 DPT=37306 WINDOW=0 RES=0x00 RST URGP=0 
+[3573051.839082] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=32740 DF PROTO=TCP SPT=8080 DPT=37338 WINDOW=0 RES=0x00 RST URGP=0 
+[3573073.121112] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=35747 DF PROTO=TCP SPT=8080 DPT=37338 WINDOW=0 RES=0x00 RST URGP=0 
+[3573087.298834] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=37489 DF PROTO=TCP SPT=8080 DPT=37318 WINDOW=0 RES=0x00 RST URGP=0 
+[3573117.281574] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=42279 DF PROTO=TCP SPT=8080 DPT=37322 WINDOW=0 RES=0x00 RST URGP=0 
+[3573138.137866] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=47737 DF PROTO=TCP SPT=8080 DPT=37334 WINDOW=0 RES=0x00 RST URGP=0 
+[3573165.918927] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=54210 DF PROTO=TCP SPT=8080 DPT=37334 WINDOW=0 RES=0x00 RST URGP=0 
+[3573169.208736] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=54322 DF PROTO=TCP SPT=8080 DPT=37328 WINDOW=0 RES=0x00 RST URGP=0 
+[3573198.558964] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=58318 DF PROTO=TCP SPT=8080 DPT=37328 WINDOW=0 RES=0x00 RST URGP=0 
+[3573213.919069] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=60376 DF PROTO=TCP SPT=8080 DPT=37340 WINDOW=0 RES=0x00 RST URGP=0 
+[3573227.998918] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=61746 DF PROTO=TCP SPT=8080 DPT=37340 WINDOW=0 RES=0x00 RST URGP=0 
+[3573247.920959] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=64355 DF PROTO=TCP SPT=8080 DPT=37300 WINDOW=0 RES=0x00 RST URGP=0 
+[3573278.561996] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=5360 DF PROTO=TCP SPT=8080 DPT=37360 WINDOW=0 RES=0x00 RST URGP=0 
+[3573293.040602] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=7649 DF PROTO=TCP SPT=8080 DPT=37354 WINDOW=0 RES=0x00 RST URGP=0 
+[3573308.639940] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=10691 DF PROTO=TCP SPT=8080 DPT=37360 WINDOW=0 RES=0x00 RST URGP=0 
+[3573327.719791] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=12815 DF PROTO=TCP SPT=8080 DPT=37378 WINDOW=0 RES=0x00 RST URGP=0 
+[3573355.016634] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=16660 DF PROTO=TCP SPT=8080 DPT=37362 WINDOW=0 RES=0x00 RST URGP=0 
+[3573371.362088] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=18433 DF PROTO=TCP SPT=8080 DPT=37368 WINDOW=0 RES=0x00 RST URGP=0 
+[3573398.461638] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=23277 DF PROTO=TCP SPT=8080 DPT=37374 WINDOW=0 RES=0x00 RST URGP=0 
+[3573412.318629] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=24371 DF PROTO=TCP SPT=8080 DPT=37374 WINDOW=0 RES=0x00 RST URGP=0 
+[3573447.990866] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=27298 DF PROTO=TCP SPT=8080 DPT=37392 WINDOW=0 RES=0x00 RST URGP=0 
+[3573448.420764] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=27329 DF PROTO=TCP SPT=8080 DPT=37392 WINDOW=0 RES=0x00 RST URGP=0 
+[3573475.678596] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=31833 DF PROTO=TCP SPT=8080 DPT=37392 WINDOW=0 RES=0x00 RST URGP=0 
+[3573489.588692] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=34105 DF PROTO=TCP SPT=8080 DPT=37366 WINDOW=0 RES=0x00 RST URGP=0 
+[3573507.668862] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=36858 DF PROTO=TCP SPT=8080 DPT=37408 WINDOW=0 RES=0x00 RST URGP=0 
+[3573527.298571] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=40219 DF PROTO=TCP SPT=8080 DPT=37474 WINDOW=0 RES=0x00 RST URGP=0 
+[3573554.401271] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=43314 DF PROTO=TCP SPT=8080 DPT=37474 WINDOW=0 RES=0x00 RST URGP=0 
+[3573658.508377] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=57792 DF PROTO=TCP SPT=8080 DPT=37488 WINDOW=0 RES=0x00 RST URGP=0 
+[3573659.362237] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=57839 DF PROTO=TCP SPT=8080 DPT=37488 WINDOW=0 RES=0x00 RST URGP=0 
+[3573661.121954] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=57845 DF PROTO=TCP SPT=8080 DPT=37488 WINDOW=0 RES=0x00 RST URGP=0 
+[3573664.558504] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=58687 DF PROTO=TCP SPT=8080 DPT=37488 WINDOW=0 RES=0x00 RST URGP=0 
+[3573664.966873] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=58762 DF PROTO=TCP SPT=8080 DPT=37486 WINDOW=0 RES=0x00 RST URGP=0 
+[3573671.520394] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=60311 DF PROTO=TCP SPT=8080 DPT=37488 WINDOW=0 RES=0x00 RST URGP=0 
+[3573687.889274] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=62890 DF PROTO=TCP SPT=8080 DPT=37516 WINDOW=0 RES=0x00 RST URGP=0 
+[3573713.127153] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=754 DF PROTO=TCP SPT=8080 DPT=37488 WINDOW=0 RES=0x00 RST URGP=0 
+[3573732.960448] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=2431 DF PROTO=TCP SPT=8080 DPT=37514 WINDOW=0 RES=0x00 RST URGP=0 
+[3573808.608938] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=14003 DF PROTO=TCP SPT=8080 DPT=37518 WINDOW=0 RES=0x00 RST URGP=0 
+[3573809.521024] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=14103 DF PROTO=TCP SPT=8080 DPT=37518 WINDOW=0 RES=0x00 RST URGP=0 
+[3573811.278654] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=14473 DF PROTO=TCP SPT=8080 DPT=37518 WINDOW=0 RES=0x00 RST URGP=0 
+[3573814.719174] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=14818 DF PROTO=TCP SPT=8080 DPT=37518 WINDOW=0 RES=0x00 RST URGP=0 
+[3573834.086423] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=17211 DF PROTO=TCP SPT=8080 DPT=37524 WINDOW=0 RES=0x00 RST URGP=0 
+[3573851.995363] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=20491 DF PROTO=TCP SPT=8080 DPT=37538 WINDOW=0 RES=0x00 RST URGP=0 
+[3573868.048967] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=21969 DF PROTO=TCP SPT=8080 DPT=37532 WINDOW=0 RES=0x00 RST URGP=0 
+[3573893.598659] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=25157 DF PROTO=TCP SPT=8080 DPT=37538 WINDOW=0 RES=0x00 RST URGP=0 
+[3573912.960337] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=28917 DF PROTO=TCP SPT=8080 DPT=37542 WINDOW=0 RES=0x00 RST URGP=0 
+[3573936.478602] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=32071 DF PROTO=TCP SPT=8080 DPT=37532 WINDOW=0 RES=0x00 RST URGP=0 
+[3573950.881184] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=34648 DF PROTO=TCP SPT=8080 DPT=37552 WINDOW=0 RES=0x00 RST URGP=0 
+[3573972.318549] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=37758 DF PROTO=TCP SPT=8080 DPT=37552 WINDOW=0 RES=0x00 RST URGP=0 
+[3573999.838700] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=41718 DF PROTO=TCP SPT=8080 DPT=37552 WINDOW=0 RES=0x00 RST URGP=0 
+[3574010.078481] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=43396 DF PROTO=TCP SPT=8080 DPT=37534 WINDOW=0 RES=0x00 RST URGP=0 
+[3574027.519499] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=45920 DF PROTO=TCP SPT=8080 DPT=37556 WINDOW=0 RES=0x00 RST URGP=0 
+[3574051.039449] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=47870 DF PROTO=TCP SPT=8080 DPT=37544 WINDOW=0 RES=0x00 RST URGP=0 
+[3574070.882657] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=50115 DF PROTO=TCP SPT=8080 DPT=37522 WINDOW=0 RES=0x00 RST URGP=0 
+[3574127.368291] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=56515 DF PROTO=TCP SPT=8080 DPT=37566 WINDOW=0 RES=0x00 RST URGP=0 
+[3574127.819838] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=56564 DF PROTO=TCP SPT=8080 DPT=37566 WINDOW=0 RES=0x00 RST URGP=0 
+[3574128.718470] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=56700 DF PROTO=TCP SPT=8080 DPT=37566 WINDOW=0 RES=0x00 RST URGP=0 
+[3574157.997917] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=60112 DF PROTO=TCP SPT=8080 DPT=37578 WINDOW=0 RES=0x00 RST URGP=0 
+[3574184.799027] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=64542 DF PROTO=TCP SPT=8080 DPT=37566 WINDOW=0 RES=0x00 RST URGP=0 
+[3574211.368381] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=3798 DF PROTO=TCP SPT=8080 DPT=37598 WINDOW=0 RES=0x00 RST URGP=0 
+[3574211.779309] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=3877 DF PROTO=TCP SPT=8080 DPT=37598 WINDOW=0 RES=0x00 RST URGP=0 
+[3574241.049585] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=7955 DF PROTO=TCP SPT=8080 DPT=37602 WINDOW=0 RES=0x00 RST URGP=0 
+[3574256.478320] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=9595 DF PROTO=TCP SPT=8080 DPT=37602 WINDOW=0 RES=0x00 RST URGP=0 
+[3616672.157669] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=63641 DF PROTO=TCP SPT=8080 DPT=37616 WINDOW=0 RES=0x00 RST URGP=0 
+[3616672.164503] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=63642 DF PROTO=TCP SPT=8080 DPT=37636 WINDOW=0 RES=0x00 RST URGP=0 
+[3616672.203286] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=63651 DF PROTO=TCP SPT=8080 DPT=37604 WINDOW=0 RES=0x00 RST URGP=0 
+[3616672.203617] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=63652 DF PROTO=TCP SPT=8080 DPT=37644 WINDOW=0 RES=0x00 RST URGP=0 
+[3616672.212974] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=63653 DF PROTO=TCP SPT=8080 DPT=37640 WINDOW=0 RES=0x00 RST URGP=0 
+[3616672.215807] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=63654 DF PROTO=TCP SPT=8080 DPT=37622 WINDOW=0 RES=0x00 RST URGP=0 
+[3616672.223473] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=63655 DF PROTO=TCP SPT=8080 DPT=37626 WINDOW=0 RES=0x00 RST URGP=0 
+[3616672.223964] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=63656 DF PROTO=TCP SPT=8080 DPT=37584 WINDOW=0 RES=0x00 RST URGP=0 
+[3616672.224293] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=63657 DF PROTO=TCP SPT=8080 DPT=37632 WINDOW=0 RES=0x00 RST URGP=0 
+[3616672.285667] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=63666 DF PROTO=TCP SPT=8080 DPT=37642 WINDOW=0 RES=0x00 RST URGP=0 
+[3616699.997376] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=2251 DF PROTO=TCP SPT=8080 DPT=37626 WINDOW=0 RES=0x00 RST URGP=0 
+[3616727.518205] [UFW BLOCK] IN=wlan0 OUT= MAC=b8:27:eb:31:a6:67:00:26:18:0f:67:af:08:00 SRC=192.168.0.2 DST=192.168.0.6 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=8017 DF PROTO=TCP SPT=8080 DPT=37622 WINDOW=0 RES=0x00 RST URGP=0 
