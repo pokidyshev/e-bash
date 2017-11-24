@@ -27,18 +27,18 @@ if [[ $# > 1 ]] || [[ $1 == '--help' ]]; then
   exit 0
 fi
 
-grep usb dmesg.txt | grep idVendor | while read -r i; do
+rm -f dmesg_usb
+
+grep usb dmesg | grep idVendor | while read -r i; do
   number="$(echo $i | cut -d '[' -f2 | cut -d ']' -f1)"
   vendor="$(echo $i | cut -d '=' -f2 | cut -d ',' -f1)"
   name="$(echo $i | cut -d ' ' -f4)"
-  echo "$vendor $name $number" >> temp_usb.txt
+  echo "$vendor $name $number" >> dmesg_usb
 done
 
-for vendor in `cut -d ' ' -f1 temp_usb.txt | uniq`; do
+for vendor in `cut -d ' ' -f1 dmesg_usb | uniq`; do
   echo
   echo "idVendor: $vendor"
-  echo "total: $(grep "$vendor" temp_usb.txt | wc -l | sed -e 's/^[ \t]*//')"
-  grep "$vendor" temp_usb.txt | cut -d ' ' -f2,4
+  echo "total: $(grep "$vendor" dmesg_usb | wc -l | sed -e 's/^[ \t]*//')"
+  grep "$vendor" dmesg_usb | cut -d ' ' -f2,4
 done
-
-rm -f temp_usb.txt
