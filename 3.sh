@@ -20,7 +20,7 @@
 USAGE="Usage: $0 [--help]"
 INFO="Вывести список usb-устройств, сгруппированных по idVendor"
 
-if [[ $# < 1 ]] || [[ $1 == '--help' ]]; then
+if [[ $# > 1 ]] || [[ $1 == '--help' ]]; then
   echo $USAGE
   echo
   echo $INFO
